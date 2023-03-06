@@ -1,0 +1,49 @@
+﻿@page
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            Usuário: <input type="text" id="userInput" />
+        </div>
+        <div class="col-6">&nbsp;</div>
+    </div>
+    <div class="row">Votação: Qual é a sua banda de rock favorita?&nbsp;</div>
+    <div class="row">
+        <div class="col-12">
+            <!-- input type="radio" name="group1" id="r1" value="1" /><label for="r1"> button one</label>-->
+
+            <input type="radio" name="myBand" id="metallica" value="Metallica" />
+            <label for="captainMarvel">Metallica</label>
+            <br /><span id="metallicaBlock"></span><br />
+
+            <input type="radio" name="myBand" id="megadeth" value="Megadeth" />
+            <label for="canalDotNetAmerica">Megadeth</label>
+            <br /><span id="megadethBlock"></span><br />
+
+            <input type="radio" name="myBand" id="motorhead" value="Motorhead" />
+            <label for="motorheadAmerica">Motorhead</label>
+            <br /><span id="motorheadBlock"></span><br />
+
+            <input type="radio" name="myBand" id="slayer" value="Slayer" />
+            <label for="slayerAmerica">Slayer</label>
+            <br /><span id="slayerBlock"></span><br />
+
+            <input type="radio" name="myBand" id="naoPossui" value="Eu não possuo nenhum canal favorito" />
+            <label for="captainMe">Não possuo nenhum canal favorito.</label>
+            <br /><span id="naoPossuiBlock"></span><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <input type="button" id="sendButton" value="Vote Now" />
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/poll.js"></script>
